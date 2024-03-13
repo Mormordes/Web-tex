@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+
+<head>
+   <title>Galery</title>
+   <meta charset="utf-8">
+   <meta name='viewport' content='width=device-width,initial-scale=1'/>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>   
+</head>
+
+
+
+	
+
+<body>
+	<header>
+		<img src="images\logo.png" alt="Логотип" class="logoimage" >
+		<h1>Веб технологии</h1>	 
+	 </header>
+	<div class="navig-container">
+		<div class="navig"><a href="gallery.html">Галерея</a> </div>
+		<div class="navig"><a href="index.html">Запись на аттестацию </a> </div>
+		<div class="navig"><a href="test.html">Тест</a> </div>
+	</div>
+	<section class="gallery">		
+		
+		<div class="gallery-list">
+		<a href="images/img1.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img1.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img2.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img2.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img3.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img3.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img4.jpg"  class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img4.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img5.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img5.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img6.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img6.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img7.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img7.jpg" class="gallery-small-img" alt="alt">
+		</a>
+		<a href="images/img8.jpg" class="gallery-item">
+		  <div class="gallery-item-hover">Посмотреть</div>
+		  <img src="images/img8.jpg" class="gallery-small-img" alt="alt">
+		</a>
+	  </div>
+	</section>
+  
+  
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script>
+	  $(".gallery-list").magnificPopup({
+		delegate: "a",
+		type: "image",
+		gallery: {
+		  enabled: true
+		}
+	  });
+	</script>
+  </body>
+
+  </html>

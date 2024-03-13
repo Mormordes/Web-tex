@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<head>
+   <title>Регистрация участников конференции</title>
+   <meta charset="utf-8">
+   <meta name='viewport' content='width=device-width,initial-scale=1'/>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+   <script src="script.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <img src="images\logo.png" alt="Логотип" class="logoimage" >
+        <h1>Веб технологии</h1>	 
+     </header>
+    
+     <div class="navig-container">
+        <div class="navig"><a href="gallery.html">Галерея</a> </div>
+        <div class="navig"><a href="index.html">Запись на аттестацию </a> </div>
+        <div class="navig"><a href="test.html">Тест</a> </div>
+    </div>
+   
+    <div class="nanavig">
+        
+    <div class="test-container">
+    <table class="tableform">
+        <thead>
+            <tr>
+              <th scope="col">Вопрос</th>
+              <th scope="col">Ответ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th scope="row">Каким тегом объявляется web-страница?</th>
+                <td><input type="text" id="answer1" required><Br></td>
+            </tr>
+            <tr>
+                <th scope="row">Какой параметр отвечает за ширину картинки?</th>
+                <td>            <select id="subject">
+                    <option value="width"> width </option>
+                    <option value="height">height</option>
+                    <option value="src">src</option>
+                    </select><Br></td>
+            </tr>
+            <tr>
+                <th scope="row">Какой тег предназначен для выделения параграфов в тексте?</th>
+                <td>
+                    <input type="radio" name="answer3" value="b"> b<Br>
+                    <input type="radio" name="answer3" value="p"> p <Br>
+                    <input type="radio" name="answer3" value="br"> br<Br>
+                    <input type="radio" name="answer3" value="div"> div<Br></td>
+            </tr>
+            <tr>
+                <th scope="row">Отметьте верные утвеждения</th>
+                <td>         <fieldset>
+                    <legend>Выберите несколько вариантов ответа</legend>
+                    <div>
+                        <input type="checkbox" id="test" name="test" value="Правильно">
+                        <label for="test">HTMI-файл открывается в браузере двойным щелчком мыши по его значку</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interview" name="interview" value="Собеседование">
+                        <label for="interview">Параметр стля тегов front-size отвечает за тип шрифта </label>
+                    </div>
+                    <div>
+                         <input type="checkbox" id="report" name="report" value="Доклад">
+                        <label for="report">Цвет текста можно прописывать только для тега p</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="verifwork" name="verifwork" value="Верно">
+                        <label for="verifwork"> Между парами тегов прописываются данне,кторые отображаются на странице</label>
+                    </div>
+                    </fieldset></td>
+            </tr>
+            <tr>
+                <th scope="row">Какой из тегов формирует маскированный список?</th>
+                <td><input list="answers5" id="answer5" name="answer5" />
+                    <datalist id="answers5">
+                      <option value="hr"></option>
+                      <option value="br"></option>
+                      <option value="ul"></option>
+                      <option value="ol"></option>
+                    </datalist></td>
+            </tr>
+            <tr>
+                <th scope="row">Дата публикации HTML 5.0</th>
+                <td> <input type="date" id="answer6" name="answer6"/>     </td>
+            </tr>
+
+        </tbody>
+    </table>
+                
+
+            <button onclick="checktest()" type="button" id="checktestbtn">Отправить</button>
+            <Br>    
+    </div>
+
+    <div class="test-end" id="test-end">
+    <p></p>
+    </div>
+    </div>
+</body>

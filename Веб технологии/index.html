@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<head>
+   <title>Регистрация участников конференции</title>
+   <meta charset="utf-8">
+   <meta name='viewport' content='width=device-width,initial-scale=1'/>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+   <script src="script.js"></script>
+</head>
+
+<body>
+
+	
+ <header>
+    <img src="images\logo.png" alt="Логотип" class="logoimage" >
+	<h1>Веб технологии</h1>	 
+ </header>
+
+ <div class="navig-container">
+	<div class="navig"><a href="gallery.html">Галерея</a> </div>
+	<div class="navig"><a href="index.html">Запись на аттестацию </a> </div>
+	<div class="navig"><a href="test.html">Тест</a> </div>
+</div>
+<!--<a href="index.html"><img src="images\img1.jpg" alt="Логотип"></a> -->
+<div class="nanavig">
+<form method="post" onsubmit="registration(); return false;">
+	<div class="formregistration" > 
+		<div>
+			<label for="surname"> Фамилия</label>
+			<input type="text" placeholder="Фамилия" id="surname" pattern="[А-Яа-яЁё]+" required><Br>
+			<label for="name">Имя</label>
+			<input type="text" placeholder="Имя" id="name"  pattern="[А-Яа-яЁё]+" required><Br>
+			<label for="midlename" >Отчество</label>
+			<input type="text" placeholder="Отчество" id="midlename"  pattern="[А-Яа-яЁё]+" required><Br>
+		</div>
+		
+		<div>
+			<label for="phone">Телефон</label>
+			<input type="text" placeholder="+7xxxxxxxxxx" autofocus id="phone" required pattern="\+7\d{10}" maxlength="12"><Br>
+		</div>
+	   
+	    <div>
+		   <label for="email">Почта</label>
+		   <input type="email" placeholder="Почта" id="email" name="email" required><Br>
+	    </div>
+	   
+	   
+	    <div>
+			<b>Выбреите предмет:</b>
+			<select id="subject">
+				<option value="Математика">Математика</option>
+				<option value="Физика">Физика</option>
+				<option value="Информатика">Информатика</option>
+			</select>
+	    </div>
+	   
+	  
+		<div>
+			<label for="birthday">Дата рождения</label>
+			<input type="date" id="birthday"><Br>
+		</div>
+	   
+	   
+		<div>
+		<form method="post"  onsubmit="showTemaCase()">
+		    <input type="checkbox" id="report" name="report" value="Доклад" onclick="showTemaCase(this)">
+
+			<label for="report">Доклад</label><br>	
+				<label style="display:none" for="tema"> Тема </label>
+				<input id="temaLabel" style="display:none; width: 100%;" type="text" id="tema"><Br>
+
+		</form>
+		</div>				
+		   	
+	    <button style="margin-bottom: 20px;" type="submit" id="registerbtn">Отправить</button><Br>
+			
+	</div>
+
+</form>
+	<div class="form-success" id="form-success-text">				
+	</div>	
+ </div>	
+</body>
